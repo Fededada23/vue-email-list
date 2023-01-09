@@ -1,7 +1,7 @@
 const {
     createApp
 } = Vue
-// Array di oggetti
+
 createApp({
     data(){
         return{
@@ -18,9 +18,10 @@ createApp({
                 .then((result)=> {
                     this.email = result.data.response;
                     this.emailList.push(this.email);
+                    
                 });
             }
             
         },
-    }    
-).mount('#app');
+    }).mount('#app');    
+    
